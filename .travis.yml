@@ -1,8 +1,9 @@
 language: ruby
 before_script:
 - rm -rf public
-script:
 - bundle exec jekyll build
+script:
+- npm run deploy
 branches:
   only:
   - master
